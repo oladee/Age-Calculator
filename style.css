@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    padding:50px 20px;
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+main{
+    background-color: hsl(0, 0%, 100%);
+    padding:40px 15px;
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+}
+.inCon{
+    display: inline-block;
+    padding-right: 15px;
+}
+input{
+    font-size: 20px;
+    font-weight: 700;
+    padding:15px 0px 15px 10px;
+    width: 75px;
+    height: 40px;
+}
+.inCon3 input{
+    width: 90px;
+}
+.arrow img{
+    margin: 10px  auto;
+    display: block;
+    padding: 20px;
+    border-radius: 55px;
+    background-color: hsl(259, 100%, 65%);
+    cursor:pointer;
+}
+.Results p{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 800;
+}
+.Results span{
+    color: hsl(259, 100%, 65%);
+}
+.error span{
+    display: inline-block;
+    padding: 0px 10px 0px 0px;
+    color: hsl(0, 100%, 67%);
+    font-size: 8px;
+}
+@media(min-width:1024px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        
+        min-width: 50%;
+        padding-left: 50px;
+    }
+    .arrow img{
+        margin-left: 80%;
+    }
+    .Results p{
+        font-size: 90px;
+        line-height: 100px;
+    }
+}

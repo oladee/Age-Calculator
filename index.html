@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Job Seek - Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="" method="post">
+        <div class="inputContainer">
+          <div class="inCon inCon1">
+            <label for="Day">DAY </label>
+            <div>
+              <input type="tel"  name="Day" id="Day" placeholder="DD"  maxlength="2"/>
+            </div>
+          </div>
+          <div class="inCon inCon2">
+            <label for="Month">MONTH </label>
+            <div>
+              <input type="tel" name="Month" id="Month" placeholder="MM" maxlength="2" />
+            </div>
+          </div>
+          <div class="inCon inCon3">
+            <label for="Year">YEAR</label>
+            <div>
+              <input type="tel" name="Year" id="Year" placeholder="YYYY" maxlength="4"/>
+            </div>
+          </div>
+        </div>
+        <div class="error">
+          <span id="errorMsg1"></span>
+          <span id="errorMsg2"></span>
+          <span id="errorMsg3"></span>
+        </div>
+        <div class="arrow">
+          <img id="button" type="submit" src="./assets/images/icon-arrow.svg" alt="">
+        </div>
+      </form>
+      <div class="Results">
+        <p><span id="ageYears">--</span> years</p>
+        <p><span id="ageMonths">--</span> months</p>
+        <p><span id="ageDays">--</span> days</p>
+      </div>
+    </main>
+    
+    <script src="main.js"></script>
+  </body>
+</html>
