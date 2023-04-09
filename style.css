@@ -37,6 +37,9 @@ input{
     background-color: hsl(259, 100%, 65%);
     cursor:pointer;
 }
+.arrow img:hover{
+    background-color: ;
+}
 .Results p{
     font-size: 40px;
     font-style: italic;
