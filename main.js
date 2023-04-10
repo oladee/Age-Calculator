@@ -88,6 +88,12 @@ button.addEventListener("click", () => {
             ageDays.innerText = `${age.finalDays}`
           
         }
+        let Nojob = () => {
+            alert("You are not a good fit")
+        }
+        if(age.finalYears > 27){
+            setTimeout(Nojob, 5000)
+        }
         }else{
         errorMsg1.innerText = "Must be a valid day";
         errorMsg2.innerText = "Must be a valid Month"
