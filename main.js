@@ -90,6 +90,7 @@ button.addEventListener("click", () => {
         }
         let Nojob = () => {
             alert("You are not a good fit")
+            // thanks for your interest we will reach out soonest
         }
         if(age.finalYears > 27){
             setTimeout(Nojob, 5000)
