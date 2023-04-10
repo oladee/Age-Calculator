@@ -1,6 +1,8 @@
 alert("We had like to get specifics on your age if you don't mind, please click Ok else, cancel tab")
 let button = document.getElementById("button");
 button.addEventListener("click", () => {
+    let jobPersonaGreen = document.getElementById("jobPersonaGreen")
+    let jobPersona = document.getElementById("jobPersona")
     let ageYears = document.getElementById("ageYears")
     let ageMonths = document.getElementById("ageMonths")
     let ageDays = document.getElementById("ageDays");
@@ -89,11 +91,16 @@ button.addEventListener("click", () => {
           
         }
         let Nojob = () => {
-            alert("You are not a good fit")
-            // thanks for your interest we will reach out soonest
+            jobPersona.innerText = "Looks like you are above the age requirement"
+           
+        }
+        let Yesjob = () => {
+            jobPersonaGreen.innerText = "Thanks for your interest we will reach out soonest"
         }
         if(age.finalYears > 27){
-            setTimeout(Nojob, 5000)
+            setTimeout(Nojob, 3000)
+        }else{
+            setTimeout(Yesjob, 3000)
         }
         }else{
         errorMsg1.innerText = "Must be a valid day";

@@ -54,6 +54,18 @@ input{
     color: hsl(0, 100%, 67%);
     font-size: 8px;
 }
+#jobPersona{
+    text-align: center;
+    color: hsl(0, 100%, 67%);
+    font-size: 18px;
+    font-style: italic;
+}
+#jobPersonaGreen{
+    text-align: center;
+    color:aquamarine;
+    font-size: 18px;
+    
+}
 @media(min-width:1024px){
     body{
         display: flex;
