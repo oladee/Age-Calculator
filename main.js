@@ -3,7 +3,10 @@ alert(
 );
 let button = document.getElementById("button");
 button.addEventListener("click", () => {
-    let Dinput = document.getElementById("Day")
+  let Lday = document.getElementById("Lday");
+  let Lmonth = document.getElementById("Lmonth");
+  let Lyear = document.getElementById("Lyear");
+  let Dinput = document.getElementById("Day");
   let Minput = document.getElementById("Month");
   let Yinput = document.getElementById("Year");
   let jobPersonaGreen = document.getElementById("jobPersonaGreen");
@@ -32,6 +35,8 @@ button.addEventListener("click", () => {
     let ListofDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     if (userMonth == 1 || userMonth > 2) {
       if (userDay > ListofDays[userMonth - 1]) {
+        Lday.style.color = "red";
+        Dinput.style.borderColor = "red";
         errorMsg1.innerText = "Must be a valid Day";
       } else {
         finalDate = `${userMonth}/${userDay}/${userYear}`;
@@ -42,8 +47,12 @@ button.addEventListener("click", () => {
         leapYear = true;
       }
       if (leapYear === false && userDay >= 29) {
+        Lday.style.color = "red";
+        Dinput.style.borderColor = "red";
         errorMsg1.innerText = "Must be a valid Day";
       } else if (leapYear === true && userDay > 29) {
+        Lday.style.color = "red";
+        Dinput.style.borderColor = "red";
         errorMsg1.innerText = "Must be a valid Day";
       } else {
         finalDate = `${userMonth}/${userDay}/${userYear}`;
@@ -104,8 +113,11 @@ button.addEventListener("click", () => {
       setTimeout(Yesjob, 3000);
     }
   } else {
-    Dinput.style.borderColor = "red"
+    Lday.style.color = "red";
+    Dinput.style.borderColor = "red";
+    Lmonth.style.color = "red";
     Minput.style.borderColor = "red";
+    Lyear.style.color = "red";
     Yinput.style.borderColor = "red";
     errorMsg1.innerText = "Must be a valid day";
     errorMsg2.innerText = "Must be a valid Month";
