@@ -102,10 +102,18 @@ button.addEventListener("click", () => {
     }
     let Nojob = () => {
       jobPersona.innerText = "Looks like you are above the age requirement";
+      let clear = () => {
+        jobPersona.innerText = ""
+      }
+      setTimeout(clear, 5000)
     };
     let Yesjob = () => {
       jobPersonaGreen.innerText =
         "Thanks for your interest we will reach out soonest";
+        let clear = () => {
+            jobPersonaGreen.innerText = ""
+          }
+          setTimeout(clear, 5000)
     };
     if (age.finalYears > 27) {
       setTimeout(Nojob, 3000);
