@@ -1,3 +1,4 @@
+alert("We had like to get specifics on your age if you don't mind, please click Ok else, cancel tab")
 let button = document.getElementById("button");
 button.addEventListener("click", () => {
     let ageYears = document.getElementById("ageYears")
